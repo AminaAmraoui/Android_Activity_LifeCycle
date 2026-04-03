@@ -131,7 +131,7 @@ messages appear on screen and which log entries appear in Logcat.
 
 ## Point for Discussion
 
-** `Toast` in `onPause()` may not display**
+**1. `Toast` in `onPause()` may not display**
 
 `onPause()` can be followed very quickly by `onStop()`, at which point the
 window is detached and the `Toast` may be discarded by the system before it
